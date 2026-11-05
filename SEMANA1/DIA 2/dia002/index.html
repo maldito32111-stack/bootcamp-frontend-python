@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de contacto</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+</head>
+<body>
+  <main class="container">
+    <h1>Formulario + Inputs</h1>
+
+    <form>
+        <h2>Inputs</h2>
+
+        <label for="input">Input tipo Texto</label>
+        <input id="input1" placeholder="ingresa algun texto" />
+
+        <label>
+          input (solo lectura)
+          <input readonly value="copia este codigo" placeholder="Input de solo lectura"
+          type="text"/>
+        </label>
+        <label>
+          input (desactivado)
+          <input disabled placeholder="input desactivo" type="text"/>
+        </label>
+
+        <label>
+          input (number)
+          <input placeholder="edad Ej. 18" type="number" min="18" max="99"/>
+        </label>
+
+        <label>
+          input (email)
+          <input placeholder="correo Ej. correo@gmail.com" type="email"/>
+        </label>
+
+        <label>
+          input (rango)
+          <input type="range" min="0" max="100" step="10"/>
+        </label>    
+
+        <label>
+          input (telefono)
+          <input type="tel" placeholder="(+51)  999 999 999" />
+        </label>
+
+        <label>
+          input (url)
+          <input type="url" placeholder="Ej. misitio.com" />
+        </label>
+
+        <label>
+          input (pasword)
+          <input type="password" placeholder="password" />
+        </label>
+
+        <label>
+          input (tipo de color)
+          <input type="color" />
+        </label>
+
+        <label>
+          input (busqueda)
+          <input type="search" />
+        </label>
+        
+        <label>
+          input ( archivo - seleccionar un archivo a la vez) Ej. .png
+          <input type="file" accept=".png"/>
+        </label>
+
+        <label>
+          input ( archivo - seleccionar multiples archivos a la vez) Ej. .png
+          <input type="file" accept=".png" multiple/>
+        </label>
+
+        <input type="hidden" value="datos ocultos">
+
+        <input type="button" value="hola soy un boton">
+
+        <button>hola soy boton</button>
+
+        <input type="submit" value="Guardar">
+
+    </form>
+
+    <form>
+        <label> 
+        input tipo fecha y hora
+        <input type="datetime-local">
+        </label>
+
+        <label>
+        input tipo fecha 
+        <input type="date">
+        </label>
+
+        <label>
+        input tipo hora 
+        <input type="time">
+        </label>
+
+        <label>
+        input tipo semana 
+        <input type="week">
+        </label>
+
+        <label>
+        input tipo mes 
+        <input type="month">
+        </label>
+
+        <label>
+        input tipo semana 
+        <input type="submit" value="Guardar">
+        </label>
+
+    </form>
+    <form>
+        <h2>textarea</h2>
+
+        <label>
+
+            <textarea placeholder="escribe una descripcion sobre ti" 
+            rows="6" cols="hola a todos"></textarea>
+        </label>
+    </form>
+    <form>
+
+        <h2>validaciones</h2>
+
+        <label>
+            nombre(obligatorio)
+            <input type="text" name="nombre" required minlength="3" maxlength="15">
+        </label>
+
+        <label>
+            email(obligatorio)
+            <input type="email" name="correo" required>
+        </label>
+
+        <label>
+            comidas (obligatorio)
+            <input type="name" required>
+            <option value="">seleciona tu comida favorita</option>
+            <option> francesa</option>
+            <option> escosesa</option>
+            <option> flamue</option>
+            
+        </label>
+    </form>
+  </main>  
+</body>
+</html>

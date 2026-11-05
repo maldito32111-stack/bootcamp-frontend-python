@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+
+    <!-- Encabezado con tu nombre y menú de navegación -->
+    <header>
+        <h1>Luis Fernando Huanca Apaza</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección "Sobre mí" con una imagen y descripción personal -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <img src="fotor.jpg" alt="Foto de perfil de Luis Fernando" width="200">
+            <p>¡Hola! Soy Luis Fernando Huanca Apaza, tengo 23 años. Me gusta crear, experimentar con diseños y aprender cosas nuevas. Me apasiona el diseño gráfico, el modelado 3D y la creación de contenido visual. Actualmente también estoy aprendiendo programación y desarrollo web, porque me encanta combinar el diseño con la tecnología.</p>
+        </section>
+
+        <!-- Lista de al menos 4 habilidades -->
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Creatividad</li>
+                <li>Adaptabilidad</li>
+                <li>Responsabilidad</li>
+            </ul>
+        </section>
+
+        <!-- Formulario de contacto con correo y mensaje obligatorios -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="correo">Correo electrónico (Obligatorio):</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje (Obligatorio):</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>© 2026 Luis Fernando Huanca Apaza. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
