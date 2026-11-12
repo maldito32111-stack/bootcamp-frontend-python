@@ -25,6 +25,42 @@ button:disabled {
 input[type=checkbox]:checked{
     outline: 2px solid red;
 }
+.tip::before {
+  content: "💡 ";
+}
+
+.obligatorio::after {
+  content: " *";
+  color: red;
+}
+
+::after::placeholder{
+    color: blue;
+}
+
+::selection{
+    background-color: gold;
+    color: blue;
+}
+
+/*selectores conbinados - .-->decendiente " no es recomendable usarlo esta de referencia " */
+
+article p {
+    border: 1px solid red;
+}
+
+/*selectores de hijo directo "no usarlo solo esta de referencia"*/
+
+article > strong {
+    color: red;
+}
+
+p > strong {
+    color: blue;
+}
+
+/**/
+
     </style>
 </head>
 <body>
@@ -35,5 +71,24 @@ input[type=checkbox]:checked{
     <button>Enviar</button>
     <button disabled>No disponible</button> 
     <input type="checkbox"> Encendido
+
+    <h1>pseudoelementos</h1>
+
+    <p class="tip">Guarda tus archivos con frecuencia.</p>
+    <p class="obligatorio">Correo</p>
+
+    <input type="text"placeholder="¿hola, como estas?" />
+
+    <h1>selecetores combinados</h1>
+
+    <article>
+        <h2>bienvenido</h2>
+        <p>mi parrafo</p>
+        <p>segundo parrafo con <strong>texto importante</strong></p>
+    </article>
+
+    <section>
+        <p>otro parrafo fuera en un seccion</p>
+    </section>
 </body>
 </html>
