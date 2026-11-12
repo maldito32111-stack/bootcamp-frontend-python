@@ -59,7 +59,90 @@ p > strong {
     color: blue;
 }
 
-/**/
+/* selector de hermano adyacente */
+
+h2 p {
+ font-weight: bold;
+ color: orange;
+}
+
+h1, h2, h3 {
+    background-color: orange;
+}
+
+/*herencia*/
+
+article{
+    color: red;
+    font-family: Arial;
+}
+
+body{
+    color: blue;
+    font-family: Arial;
+}
+
+a,button ¨{
+    color:  inherit;
+    font-family: Arial;
+}
+
+/* cascada */
+
+header {
+  color: green;
+}
+
+.texto {
+  color: red;
+}
+
+#cabecera {
+  color: blue;
+}
+
+/* otra forma de cascada */
+
+p {
+  color: red;
+}
+
+p {
+  color: rgb(47, 250, 132); /* Gana esta */
+}
+
+/* unidades de medida */
+
+/*
+    absolutas: px, cm, mm, in, pt, pc: simpre miden lo mismo
+
+    relativas: %, em, rem, vw, vh, vmin, vmax(+ modernas y flexibles): simpre depende de otra medida
+*/
+
+h1 {
+  font-size: 2rem; /* 32px con el tamaño por defecto */
+}
+
+/* porcentajes */
+
+.portada {
+  height: 100vh; /* Todo el alto de la ventana */
+  background-color: lightblue;
+}
+
+.caja {
+  width: 50%;
+  background-color: gold;
+}
+
+/* colores */
+
+h2 {
+  color: tomato;
+  color: #ff6347;/* rgb - red green blue */
+  color: rgb(255, 99, 71);
+  color: hsl(9, 100%, 64%);
+}
 
     </style>
 </head>
@@ -89,6 +172,24 @@ p > strong {
 
     <section>
         <p>otro parrafo fuera en un seccion</p>
+        <a href="#">enlase a mi pagina</a>
     </section>
+
+    <h1 >cascada</h1>
+
+    <header id="cabecera" class="texto">¿De qué color soy?</header>
+
+    <p>¿Rojo o azul? Gana la regla escrita al final.</p>
+
+    <h1>Mido 2rem</h1>
+    <p>Yo mido 1rem: el tamaño por defecto del navegador.</p>
+
+    <section class="portada">
+        <div class="caja">Mido la mitad de mi padre</div>
+    </section>
+
+    <h2>Soy color tomate</h2>
+    <p>Borra tres de las cuatro líneas de color: el título se verá igual.</p>
+
 </body>
 </html>
