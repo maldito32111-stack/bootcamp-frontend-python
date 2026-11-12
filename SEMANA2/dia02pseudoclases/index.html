@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css teoria</title>
+    <style>
+       button {
+  background-color: tomato;
+}
+
+button:hover {
+  background-color: seagreen;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 3px solid gold;
+}
+
+button:disabled {
+  background-color: lightgray;
+} 
+
+input[type=checkbox]:checked{
+    outline: 2px solid red;
+}
+    </style>
+</head>
+<body>
+    <h1>pseudoclases</h1>
+    
+   <p>Pasa el cursor por el botón y haz clic en el campo.</p>
+    <input type="text" placeholder="Escribe aquí" />
+    <button>Enviar</button>
+    <button disabled>No disponible</button> 
+    <input type="checkbox"> Encendido
+</body>
+</html>
