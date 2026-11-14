@@ -5,23 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact form</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
 <body>
-  Contact Us
+  <main class="contact-form"> 
+    <h1>Contact Us</h1>
 
-  First Name
+    <form>
+      <div class="row">
+        <label>
+          First Name
+          <input type="text" name="first_name">
+        </label>
 
-  Last Name
+        <label>
+          Last Name
+          <input type="text" name="last_name">
+        </label>
+      </div>
 
-  Email Address
+      <label>
+        Email Address
 
-  Query Type
-  General Enquiry
-  Support Request
+        <input type="email" name="email">
+      </label>
 
-  Message
+      <div>
+        Query Type
+        
+        <div class="row">
+          <label class="query-type">
+            <input type="radio" name="query_type">
+            General Enquiry
+          </label>
+          <label class="query-type">
+            <input type="radio" name="query_type">
+            Support Request
+          </label>
+          
+        </div>
+      </div>
 
-  I consent to being contacted by the team
+      <label>
+        Message
+        <textarea name="message"></textarea>
+      </label>
 
-  Submit
+      <label>
+        <input type="checkbox" name="consent" />
+        I consent to being contacted by the team
+      </label>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
 </body>
 </html>

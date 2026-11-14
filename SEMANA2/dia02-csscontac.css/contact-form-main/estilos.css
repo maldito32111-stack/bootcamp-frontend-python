@@ -1,0 +1,81 @@
+body {
+    font-family: "Karla", sans-serif;
+
+    background-color: hsl(148, 38%, 91%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh; 
+}
+.contact-form {
+    border: 1px solid red
+
+    width: 400px;
+    background-color: white;
+    background-color: #fff;
+    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
+
+    padding: 32px;
+    border: 16px;
+    border-radius: 8px;
+}
+h1{
+  
+  margin: 0;
+  margin-bottom: 32px;
+  color: hsl(187, 24%, 22%)
+}
+
+label{
+    display: block;
+    margin-bottom: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: flex;
+
+    margin-top: 8px;
+
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+
+    box-sizing: border-box;
+}
+.row{
+    /*rder: 1px solid blue;*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+input[type="submit"] {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Karla", sans-serif;
+}
+
+
+.query-type {
+    border: 1px solid hsl(186, 15%, 59%); 
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    display: flex;
+    gap: 4px;
+   
+}
