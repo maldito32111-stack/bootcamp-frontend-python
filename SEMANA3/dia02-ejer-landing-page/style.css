@@ -1,4 +1,8 @@
-  <style>
-    .hidden {
-      display: none;
-    }
+body {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
