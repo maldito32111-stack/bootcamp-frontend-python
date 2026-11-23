@@ -1,8 +1,310 @@
-body {
-  background-color: black;
-  color: white;
+/* GENERALES */
+
+/* Selector universal */
+* {
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+  margin: 0;
 }
+
+html {
+  font-size: 14px;
+}
+
+/* font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif; */
+
+body {
+  background-color: hsl(218, 28%, 13%);
+
+  color: hsl(0, 0%, 100%);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+img {
+  /* RWD (Responsive Web Design) para imágenes */
+
+  max-width: 100%; /* Nunca sale de su contenedor */
+
+  height: auto; /* Conserva la proporción */
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  /* font-size: 2rem; */ /* 2rem <> 2 * 14px <> 28px */
+}
+
+/* UTILS */
 
 .hidden {
   display: none;
+}
+
+.wrapper {
+  /* width: 1440px; */
+
+  width: min(100% - 42px, 1440px);
+}
+
+/* HEADER SECTION */
+
+.header {
+  /* border: 1px solid red; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 3rem; /* 42px <> 3rem <> 3 * 14px */
+
+  margin: 0 auto;
+}
+
+.header__nav {
+  /* TODO: terminar el css de esta navegación */
+  display: flex;
+  gap: 3rem; /* 42px <> 3rem <> 3 * 14px */
+
+  font-family: "Raleway", sans-serif;
+}
+
+/* HERO SECTION */
+
+/* TODO : Terminar el css para la sección del hero. Usen bem para el nombrado de las clases y reutilicen la función min. */
+
+.hero {
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* 14px * 2 = 28px = 2rem */
+
+  padding-top: 3rem; /* 3 * 14px  = 42px */
+  padding-bottom: 12rem; /* 12 * 14px = 168px */
+}
+
+.hero__image {}
+
+.hero__title {
+  /* border: 1px solid yellow; */
+
+  /* width: 720px; */
+  width: min(100% - 3rem, 720px);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; /* por defecto */
+  font-size: 2.5rem;
+
+  text-align: center;
+}
+
+.hero__text {
+  /* TODO: Terminar de aplicar los estilos al parrafo del hero */
+  width: min(100% - 3rem, 720px);
+
+  font-size: 1.2rem;
+
+  text-align: center;
+}
+
+.hero__button {
+  font-weight: 700;
+
+  border: none;
+  border-radius: 7rem;
+  padding: 1rem;
+  min-width: 220px;
+  color: hsl(0, 0%, 100%);
+
+  background-color: hsl(176, 68%, 64%);
+  /* FALTA: agregar el degradado del botón */
+}
+
+/* COLLABORATION SECTION */
+
+/* TODO: Terminar la sección colaboracion aplicando los css correspondientes. */
+
+.collaboration {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  gap: 3rem; /* 3 * 14px  = 42px */
+
+  margin: 0 auto;
+
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+  .collaboration {
+    flex-direction: row;
+  }
+}
+
+.productive {
+  display: flex;  
+
+  flex-direction: column; 
+
+  gap: 1rem;
+
+}
+
+.productive__title {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .productive__title {
+    font-size: 4rem;
+  }
+}
+
+.productive__text {
+  /*font/size: 14px;
+  font-family: "Open Sans", sans-serif;*/
+}
+
+.productive__link {
+  color: hsl(176, 68%, 64%);
+  /* text-decoration: underline; */
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 0.5rem;
+  /*width: 130px;*/
+
+  display: flex;
+  gap: 0.5rem;
+
+  align-self: flex-start;
+}
+
+.testimonials {
+  /* border: 1px solid yellow; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  width: min(100% - 6rem, 1440px);
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .testimonials {
+    flex-direction: row;
+  }
+}
+
+
+.testimonial {
+  /* border: 1px solid red; */
+  padding: 2rem;
+
+  background-color: hsl(219, 30%, 18%);
+
+  border-radius: .5rem;
+}
+
+.testimonial__text {
+  font-size: 1.4rem;
+
+  margin-bottom: 2rem;
+}
+
+.testimonial__profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+.testimonial__avatar {
+  border-radius: 50%;
+}
+
+.testimonial__user h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.testimonial__user h5 {
+  font-weight: 400;
+}
+
+/* footer */
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+
+  padding: 15rem 2rem 5rem 2rem;
+  /*padding-top: 15rem;*/
+  /*padding-bottom: 5rem;*/
+}
+
+.footer--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  margin: 0 auto;
+}
+
+.footer-info {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+@media (min-width: 992px) {
+   .footer-info{
+  flex-direction: row;
+
+   width: 100%;
+  justify-content: space-between;
+}
+}
+
+.footer-info__description {
+  width: 22rem;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.footer-info__contact{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-info__contact_span {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-infolinks{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-info__social{
+  display: flex;
+  gap: 1.5rem;
+
 }
