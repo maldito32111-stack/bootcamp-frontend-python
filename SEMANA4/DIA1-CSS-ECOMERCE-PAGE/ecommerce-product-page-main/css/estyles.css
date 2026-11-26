@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Kumnbh Sans", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    /*border: red;*/
+
+    width: min(100%, 1440px);
+
+    margin: 0 auto;
+}
+.header {
+    /*border: 1px solid red;*/
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1.5rem 1rem;
+
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__links {
+    /*border: 1px solid red;*/
+    display: none;
+}
+@media (min-width: 992px) {
+  .header__links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: .9rem; /* 0.9 x 16px = 14.4px <> .9rem */
+    color: hsl(219, 9%, 45%);
+  }
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

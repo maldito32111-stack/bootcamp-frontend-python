@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estyles.css">
+</head>
+<body>
+  <header class="header wrapper">
+    <div class="header__wrapper">
+      <img class="header__logo" src="images/logo.svg" alt="Logo Ecommerce">
+
+      <nav class="header__links">
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+
+    <div class="header__icons">
+      <img src="images/icon-cart.svg" alt="Icon cart">
+
+      <img src="images/image-avatar.png" alt="Image avatar" width="40" height="40">
+    </div>
+  </header>
+
+  <section class="product-detail-wrapper">
+    <section class="gallery">
+      <div class="gallery__cover">
+        <img src="images/image-product-1.jpg" alt="">
+      </div class="gallery__slider">
+      <div class="gallery__photo--active">
+        <div>
+          <img src="images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="images/image-product-2-thumbnail.jpg" alt="">
+        </div>
+      </div>      
+      <div>
+        <div>
+          <img src="images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+      </div>      
+      <div>
+        <div>
+          <img src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="product">
+
+      <h2>Sneaker Company</h2>
+    
+      <h1>Fall Limited Edition Sneakers</h1>
+    
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="product__precie">
+        <div class="product__prece--wrapper">
+          <span class="product__amount">$125.00</span>
+          <span class="product__discount">50%</span>
+        </div>
+        <span class="product__prece-before">$250.00</span>
+      </div>
+
+      <form class="cart">
+        <div class="cart__quantity">
+          <button>
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <input type="text" reandoly value="1">
+          <button>
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+
+        </div>
+        
+        <button>
+          <img src="images/icon-cart.svg" alt="">
+          Add to cart
+        </button>
+      </form>
+
+    </section>
+  </section>
+</body>
+</html>
