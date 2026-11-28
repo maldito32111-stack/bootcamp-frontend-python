@@ -1,0 +1,70 @@
+:root {
+    /*--micolor: orange;*/
+
+    --fuente-primaria: "Poppins", sans-serif; ;
+    --font-size: 16px;  
+    --font-weigth-regular: 400;
+    --font-weigth-semibold: 600;
+    --font-weigth-bold: 700;
+
+    /*color*/
+
+  --primary-color-gold: #FFB742;
+  --primary-color-blue1: #393646;
+  --primary-color-blue2: #4F4557;
+  --primary-color-blue3: #6D5D6E;
+  --primary-color-white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+     font-size: var(--font-size);
+}
+
+body {
+    font-family: var(--fuente-primaria);
+    background-color: var(--primary-color-blue2);
+    color: var(--primary-color-white);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* utilidades */
+.wrapper {
+    width: min(100% - 3rem, 1220px);
+
+    margin: 0 auto;
+    
+    border: 1px solid red;
+}
+
+/* header seccion*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.header__logo {
+    color: var(--primary-color-gold);
+    font-size: 2rem;
+    font-weight: var(--font-weigth-bold);
+}
+.header__menu {
+    display: none;
+}
+@media (min-width:992px) {
+    .header__menu {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
